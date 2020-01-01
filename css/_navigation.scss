@@ -1,0 +1,65 @@
+// This is the same as what is in Nox.
+.nav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: $navPaddingY $navPaddingX;
+    line-height: $navLineHeight;
+    justify-content: flex-start;
+    background: $blue;
+    .branding {
+        padding: $navBrandingPadY 0;
+        margin-right: $navBrandingMargin;
+        font-weight: $navBrandingWeight;
+        >a {
+            color: $white;
+            padding: $navItemPadding;
+        }
+        font-size: $navBrandingFontSize;
+        white-space: nowrap;
+    }
+    .right {
+        margin-left: auto;
+        .dropdown {
+            right: 0;
+        }
+    }
+    .group {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        list-style: none;
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            margin-bottom: 0;
+            margin-top: 0;
+            list-style: none;
+        }
+        li {
+            padding-right: 0;
+            padding-left: 0;
+            list-style-position: outside;
+            a {
+                padding: $navItemPadding;
+                font-size: $navFontSize;
+                color: $white;
+                transition: color ease .1s;
+            }
+        }
+    }
+    .group.animate {
+        ul {
+            li {
+                a:hover {
+                    color: darken($white, 3%);
+                }
+            }
+        }
+    }
+}
