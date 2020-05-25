@@ -1,0 +1,114 @@
+// This is a super, extremely simple 12 col grid. No flexibility. A flexible one will come (later).
+.grid-12 {
+    display: grid;
+    grid-template-columns: 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr;
+    column-gap: 2px;
+}
+
+.grid-11 {
+    display: grid;
+    grid-template-columns: 11fr 11fr 11fr 11fr 11fr 11fr 11fr 11fr 11fr 11fr 11fr;
+    column-gap: 2px;
+}
+
+.grid-10 {
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    column-gap: 2px;
+}
+
+.grid-9 {
+    display: grid;
+    grid-template-columns: 9fr 9fr 9fr 9fr 9fr 9fr 9fr 9fr 9fr;
+    column-gap: 2px;
+}
+
+.grid-8 {
+    display: grid;
+    grid-template-columns: 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr;
+    column-gap: 2px;
+}
+
+.grid-7 {
+    display: grid;
+    grid-template-columns: 7fr 7fr 7fr 7fr 7fr 7fr 7fr;
+    column-gap: 2px;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr 6fr 6fr 6fr;
+    column-gap: 2px;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+    column-gap: 2px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    column-gap: 2px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    column-gap: 2px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 2px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2px;
+}
+
+
+// For show
+.colorblock {
+    display: block;
+    width: 100%;
+    height: 256px;
+    content: " ";
+    padding: 10px;
+}
+.blue {
+    background: $blue;
+}
+.orange {
+    background: $orange;
+}
+.red {
+    background: $red;
+}
+.green {
+    background: $green;
+}
+.purple {
+    background: $purple;
+}
+.pink {
+    background: $pink;
+}
+.slate {
+    background: $slate; color: #fff;
+}
+.grey {
+    background: $grey; color: #fff;
+}
+.black {
+    background: $black; color: #fff;
+}
+.white {
+    background: $white;
+    border: solid 1px #333;
+    box-sizing: border-box;
+}
