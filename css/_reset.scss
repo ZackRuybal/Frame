@@ -368,11 +368,9 @@ textarea {
     padding: 0.2em 0;
 }
 
-/**
- * Visual Enhancements
- */
+// Basic visual enhancements
 body {
-    font-family: sans-serif;
+    font-family: "Segoe UI", "Helvetical Neue", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 400;
 }
 a { text-decoration: none; color: $blue; }
