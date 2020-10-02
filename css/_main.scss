@@ -40,8 +40,11 @@ h6 {
 p {
     font-size: 1rem;
     line-height: 1.5rem;
-    padding: .5rem 0;
+    padding: 0 0;
     font-weight: 400;
+    +p {
+        padding: .5rem 0;
+    }
 }
 
 // Section Heads
@@ -74,4 +77,18 @@ p {
     display: block;
     margin: 0 auto;
     padding-top: .5rem 0;
+}
+
+// Code
+code {
+    display: inline-block;
+    background: darken(#ffffff, 5%);
+    color: rgb(145, 65, 105);
+    padding: 5px 3px;
+    font-family: monospace;
+}
+
+// Dividers
+hr {
+    margin: 1rem 0;
 }
