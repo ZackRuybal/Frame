@@ -1,4 +1,4 @@
-// This is the same as what is in Nox.
+// Main Nav definition, based on Nox
 .nav {
     position: relative;
     display: flex;
@@ -62,4 +62,17 @@
             }
         }
     }
+}
+
+// Color variations
+.nav.dark {
+    background: $black;
+}
+.nav.slate {
+    background: $slate;
+}
+
+// Shape variations
+.nav.rounded {
+    border-radius: 5px;
 }
