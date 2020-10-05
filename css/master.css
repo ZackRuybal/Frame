@@ -56,8 +56,7 @@ q:before, q:after {
 }
 
 div, span {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 table {
@@ -77,6 +76,7 @@ input[type=search] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -271,8 +271,7 @@ html input[disabled] {
  */
 input[type=checkbox],
 input[type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -290,6 +289,7 @@ input[type=radio] {
 input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
@@ -484,22 +484,13 @@ hr {
 
 .nav {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px 15px;
   line-height: 1.2rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   background: #348ceb;
 }
 .nav .branding {
@@ -520,26 +511,16 @@ hr {
   right: 0;
 }
 .nav .group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding-left: 0;
   margin-bottom: 0;
   margin-top: 0;
   list-style: none;
 }
 .nav .group ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding-left: 0;
   margin-bottom: 0;
   margin-top: 0;
@@ -554,8 +535,6 @@ hr {
   padding: 8px;
   font-size: 0.99rem;
   color: white;
-  -webkit-transition: color ease 0.1s;
-  -o-transition: color ease 0.1s;
   transition: color ease 0.1s;
 }
 .nav .group.transition ul li a:hover {
@@ -582,123 +561,75 @@ hr {
 }
 
 .grid-12 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 12fr 2px 12fr 2px 12fr 2px 12fr 2px 12fr 2px 12fr 2px 12fr 2px 12fr 2px 12fr 2px 12fr 2px 12fr 2px 12fr;
   grid-template-columns: 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr 12fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-11 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 11fr 2px 11fr 2px 11fr 2px 11fr 2px 11fr 2px 11fr 2px 11fr 2px 11fr 2px 11fr 2px 11fr 2px 11fr;
   grid-template-columns: 11fr 11fr 11fr 11fr 11fr 11fr 11fr 11fr 11fr 11fr 11fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-10 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10fr 2px 10fr 2px 10fr 2px 10fr 2px 10fr 2px 10fr 2px 10fr 2px 10fr 2px 10fr 2px 10fr;
   grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-9 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 9fr 2px 9fr 2px 9fr 2px 9fr 2px 9fr 2px 9fr 2px 9fr 2px 9fr 2px 9fr;
   grid-template-columns: 9fr 9fr 9fr 9fr 9fr 9fr 9fr 9fr 9fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-8 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 8fr 2px 8fr 2px 8fr 2px 8fr 2px 8fr 2px 8fr 2px 8fr 2px 8fr;
   grid-template-columns: 8fr 8fr 8fr 8fr 8fr 8fr 8fr 8fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-7 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 7fr 2px 7fr 2px 7fr 2px 7fr 2px 7fr 2px 7fr 2px 7fr;
   grid-template-columns: 7fr 7fr 7fr 7fr 7fr 7fr 7fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-6 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 6fr 2px 6fr 2px 6fr 2px 6fr 2px 6fr 2px 6fr;
   grid-template-columns: 6fr 6fr 6fr 6fr 6fr 6fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-5 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5fr 2px 5fr 2px 5fr 2px 5fr 2px 5fr;
   grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-4 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4fr 2px 4fr 2px 4fr 2px 4fr;
   grid-template-columns: 4fr 4fr 4fr 4fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-3 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 2px 3fr 2px 3fr;
   grid-template-columns: 3fr 3fr 3fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-2 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 2px 2fr;
   grid-template-columns: 2fr 2fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .grid-1 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
-          column-gap: 2px;
+  column-gap: 2px;
 }
 
 .colorblock {
@@ -759,14 +690,12 @@ hr {
 .white {
   background: white;
   border: solid 1px #333;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .grid {
   display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .grid .col-12 {
   width: 8.3%;
@@ -825,11 +754,9 @@ hr {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   background-image: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .button.medium {
   padding: 9px 15px;
