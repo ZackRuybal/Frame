@@ -382,31 +382,31 @@ a {
 }
 
 h1 {
-  font-size: 3.5rem;
-  line-height: 3.8rem;
+  font-size: 3rem;
+  line-height: 3.3rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 3rem;
-  line-height: 3.3rem;
+  font-size: 2.5rem;
+  line-height: 2.3rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 2.5rem;
-  line-height: 2.8rem;
+  font-size: 2rem;
+  line-height: 2.3rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 h4 {
-  font-size: 2rem;
-  line-height: 2.3rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -421,7 +421,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -815,4 +815,131 @@ hr {
 .grid .col-1 {
   width: 100%;
   display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  background-image: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.button.medium {
+  padding: 9px 15px;
+  font-size: 1.5rem;
+}
+.button.large {
+  padding: 10px 16px;
+  font-size: 1.7rem;
+}
+.button.xlarge {
+  padding: 12px 24px;
+  font-size: 2rem;
+}
+.button.blue {
+  background-color: #348ceb;
+  color: white;
+}
+.button.blue.leftborder {
+  border-left: solid 0.2rem #125fb2;
+}
+.button.blue.bordered {
+  border: solid 0.12rem #146dce;
+}
+.button.orange {
+  background-color: #eb7434;
+  color: white;
+}
+.button.orange.leftborder {
+  border-left: solid 0.2rem #b24a12;
+}
+.button.orange.bordered {
+  border: solid 0.12rem #ce5514;
+}
+.button.red {
+  background-color: #eb3a34;
+  color: white;
+}
+.button.red.leftborder {
+  border-left: solid 0.2rem #b21712;
+}
+.button.red.bordered {
+  border: solid 0.12rem #ce1a14;
+}
+.button.green {
+  background-color: #34eb56;
+  color: white;
+}
+.button.green.leftborder {
+  border-left: solid 0.2rem #12b22f;
+}
+.button.green.bordered {
+  border: solid 0.12rem #14ce37;
+}
+.button.purple {
+  background-color: #eb3499;
+  color: white;
+}
+.button.purple.leftborder {
+  border-left: solid 0.2rem #b2126a;
+}
+.button.purple.bordered {
+  border: solid 0.12rem #ce147b;
+}
+.button.pink {
+  background-color: #ff69c3;
+  color: white;
+}
+.button.pink.leftborder {
+  border-left: solid 0.2rem #ff0d9e;
+}
+.button.pink.bordered {
+  border: solid 0.12rem #ff2cab;
+}
+.button.slate {
+  background-color: #868e91;
+  color: white;
+}
+.button.slate.leftborder {
+  border-left: solid 0.2rem #596062;
+}
+.button.slate.bordered {
+  border: solid 0.12rem #686f72;
+}
+.button.grey {
+  background-color: #6b6b6b;
+  color: white;
+}
+.button.grey.leftborder {
+  border-left: solid 0.2rem #3d3d3d;
+}
+.button.grey.bordered {
+  border: solid 0.12rem #4c4c4c;
+}
+.button.black {
+  background-color: #333333;
+  color: white;
+}
+.button.black.leftborder {
+  border-left: solid 0.2rem #616161;
+}
+.button.black.bordered {
+  border: solid 0.12rem #525252;
+}
+.button.rounded {
+  border-radius: 4px;
+}
+
+.buttongroup {
+  display: block;
+}
+.buttongroup + .buttongroup {
+  margin-top: 0.5rem;
 }

@@ -1,0 +1,128 @@
+// Base definition of a button
+.button {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    background-image: none;
+    box-sizing: border-box;
+    // Size definitions as well as border definitions
+    &.medium {
+        padding: 9px 15px;
+        font-size: 1.5rem;
+    }
+    &.large {
+        padding: 10px 16px;
+        font-size: 1.7rem;
+    }
+    &.xlarge {
+        padding: 12px 24px;
+        font-size: 2rem;
+    }
+    // Color definitions
+    &.blue {
+        background-color: $blue;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem darken($blue, 18%);
+        }
+        &.bordered {
+            border: solid .12rem darken($blue, 12%);
+        }
+    }
+    &.orange {
+        background-color: $orange;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem darken($orange, 18%);
+        }
+        &.bordered {
+            border: solid .12rem darken($orange, 12%);
+        }
+    }
+    &.red {
+        background-color: $red;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem darken($red, 18%);
+        }
+        &.bordered {
+            border: solid .12rem darken($red, 12%);
+        }
+    }
+    &.green {
+        background-color: $green;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem darken($green, 18%);
+        }
+        &.bordered {
+            border: solid .12rem darken($green, 12%);
+        }
+    }
+    &.purple {
+        background-color: $purple;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem darken($purple, 18%);
+        }
+        &.bordered {
+            border: solid .12rem darken($purple, 12%);
+        }
+    }
+    &.pink {
+        background-color: $pink;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem darken($pink, 18%);
+        }
+        &.bordered {
+            border: solid .12rem darken($pink, 12%);
+        }
+    }
+    &.slate {
+        background-color: $slate;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem darken($slate, 18%);
+        }
+        &.bordered {
+            border: solid .12rem darken($slate, 12%);
+        }
+    }
+    &.grey {
+        background-color: $grey;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem darken($grey, 18%);
+        }
+        &.bordered {
+            border: solid .12rem darken($grey, 12%);
+        }
+    }
+    &.black {
+        background-color: $black;
+        color: $white;
+        &.leftborder {
+            border-left: solid .2rem lighten($black, 18%);
+        }
+        &.bordered {
+            border: solid .12rem lighten($black, 12%);
+        }
+    }
+    &.rounded {
+        border-radius: 4px;
+    }
+}
+
+// Groups of buttons
+.buttongroup {
+    display: block;
+    + .buttongroup {
+        margin-top: .5rem;
+    }
+}
