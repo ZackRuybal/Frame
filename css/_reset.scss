@@ -368,6 +368,13 @@ textarea {
     padding: 0.2em 0;
 }
 
+// Fix font rendering for Segoe between browsers
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: normal;
+    src: local("Segoe UI");
+}
+
 // Basic visual enhancements
 body {
     font-family: "Segoe UI", "Helvetical Neue", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
