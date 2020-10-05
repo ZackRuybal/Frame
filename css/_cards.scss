@@ -1,0 +1,25 @@
+// Basic styling for Card
+.card {
+    background: lighten($grey, 50%);
+    padding: 1.5rem 1.5rem;
+    border-radius: 10px;
+    color: $trueblack;
+    display: inline-block;
+    overflow: hidden;
+    min-width: 30%;
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.3rem;
+        margin-top: .5rem;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: .5rem;
+        font-weight: 500;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
