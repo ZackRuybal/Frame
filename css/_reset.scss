@@ -381,3 +381,11 @@ body {
     font-weight: 400;
 }
 a { text-decoration: none; color: $blue; }
+
+// Basic formatting tags
+i,em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
