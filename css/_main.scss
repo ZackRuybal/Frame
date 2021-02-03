@@ -92,6 +92,24 @@ code {
     padding: 5px 3px;
     font-family: monospace;
 }
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    background: darken(#ffffff, 10%);
+    border: solid 1px darken(#ffffff, 15%);
+    border-radius: 5px;
+    padding: .5rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+pre>code {
+    display: inherit;
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
 
 // Dividers
 hr {
