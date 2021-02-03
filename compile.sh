@@ -43,7 +43,7 @@ elif [ "$1" = "all" ]; then
     postcss css/*.css --use autoprefixer -d css/ || echo "Failed"
     echo "Prefixed"
     printf "$(tput setaf 2)Done.\n\n\n$(tput setaf 7)" # Oooh fancy colors
-    echo "Compressing & compiling [demo]..."
+    echo "Compressing & Compiling [demo]..."
     sass demo.scss:demo.css --no-source-map --style compressed || echo "Failed"
     echo "Compressed"
     echo ""
