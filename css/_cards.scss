@@ -16,10 +16,31 @@
     h2 {
         font-size: 1.8rem;
         line-height: 2rem;
-        margin-top: .5rem;
+        margin-top: -0.5rem;
         font-weight: 500;
     }
     p {
         font-size: 1.2rem;
+    }
+}
+.card.withImage {
+    padding: 1rem 1rem;
+    .headerBlock {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        .header {
+            flex: 8;
+            //width: 60%;
+        }
+        .imageBlock {
+            flex: 1;
+            //width: 40%;
+        }
+    }
+    .contentBlock {
+        display: block;
+        margin-top: .5rem;
     }
 }
