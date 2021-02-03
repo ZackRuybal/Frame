@@ -48,7 +48,7 @@ p {
     padding: 0 0;
     font-weight: 400;
     +p {
-        padding: .5rem 0;
+        padding-top: .5rem;
     }
 }
 
@@ -98,6 +98,36 @@ hr {
     margin: 1rem 0;
 }
 
+// Figures and blockquotes
+blockquote.blockquote {
+    border-left: solid 2px $grey;
+    padding-left: .5rem;
+    margin: .5rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+figure {
+    blockquote.blockquote {
+        border-left: none;
+        padding-left: 0;
+        margin: .5rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .figcaption {
+        font-size: .8rem;
+        line-height: .8rem;
+        color: $grey;
+        margin-top: -2px;
+        margin-left: 25px;
+    }
+    .figcaption::before {
+        content: "— ";
+        color: $grey;
+    }
+}
+
+
 // Utilities
 .lead {
     font-size: 1.5rem;
@@ -107,4 +137,37 @@ hr {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: $blue;
+}
+.textCenter { text-align:  center; }
+.textLeft { text-align:  left; }
+.textRight { text-align: right; }
+
+// Lists
+ul {
+    list-style: disc;
+    margin: 1rem 0 1rem 1rem;
+    >ul {
+        margin: .2rem 0 .2rem 1rem;
+    }
+}
+ul.unstyledList {
+    list-style: none;
+    margin: 1rem 0;
+    >ul {
+        margin: .2rem 0 .2rem 1rem;
+    }
+}
+ul.inlineList {
+    list-style: inline;
+    margin: 1rem 0;
+    li {
+        display: inline-block;
+    }
+}
+ol {
+    list-style: decimal;
+    margin: 1rem 0 1rem 1rem;
+    >ol {
+        margin: .2rem 0 .2rem 1rem;
+    }
 }
