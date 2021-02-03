@@ -76,3 +76,30 @@
 .nav.rounded {
     border-radius: 5px;
 }
+
+// Transparent header variations (for use above a large home page header)
+.nav.transparent-light {
+    background: transparent;
+    .group {
+        li {
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+.nav.transparent-dark {
+    background: transparent;
+    .group {
+        li {
+            a {
+                color: $black;
+            }
+        }
+    }
+    .branding {
+        >a {
+            color: $black;
+        }
+    }
+}
