@@ -52,12 +52,6 @@ p {
     }
 }
 
-// Lead text
-.lead {
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
 // Section Heads
 .section-1 {
     font-size: 5rem;
@@ -102,4 +96,15 @@ code {
 // Dividers
 hr {
     margin: 1rem 0;
+}
+
+// Utilities
+.lead {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.dottedLink {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: $blue;
 }
