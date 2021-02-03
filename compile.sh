@@ -51,6 +51,18 @@ elif [ "$1" = "all" ]; then
     postcss demo.css --use autoprefixer -d ./ || echo "Failed"
     echo "Prefixed"
     printf "$(tput setaf 2)Done.\n$(tput setaf 7)" # Oooh fancy colors
+elif [ "$1" = "dist" ]; then
+    if [ -f "frame-dist.zip" ]; then
+        echo "$(tput setaf 1)Archive already exists, removing...$(tput setaf 7)"
+        rm frame-dist.zip
+        echo "$(tput setaf 6)Archive removed, compressing...$(tput setaf 7)"
+        zip -r frame-dist.zip ./css/master.css ./css/master.min.css
+        printf "$(tput setaf 2)Done.\n$(tput setaf 7)"
+    else
+        echo "$(tput setaf 6)Archive not found, compressing...$(tput setaf 7)"
+        zip -r frame-dist.zip ./css/master.css ./css/master.min.css
+        printf "$(tput setaf 2)Done.\n$(tput setaf 7)"
+    fi
 else
-    echo "$(tput setaf 1)Options: $(tput setaf 2)all, master, demo$(tput setaf 7)"
+    echo "$(tput setaf 1)Options: $(tput setaf 2)all, master, demo, dist$(tput setaf 7)"
 fi
