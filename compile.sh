@@ -30,6 +30,16 @@ elif [ "$1" = "demo" ]; then
     echo "Prefixed"
     echo ""
     printf "$(tput setaf 2)Done.\n$(tput setaf 7)" # Oooh fancy colors
+elif [ "$1" = "site" ]; then
+    echo "Compressing & Compiling [site]..."
+    sass site/theme.scss:site/theme.css --no-source-map --style compressed || echo "Failed"
+    echo "Compressed"
+    echo ""
+    echo "Prefixing [site]..."
+    postcss site/theme.css --use autoprefixer -d site || echo "Failed"
+    echo "Prefixed"
+    echo ""
+    printf "$(tput setaf 2)Done.\n$(tput setaf 7)" # Oooh fancy colors
 elif [ "$1" = "all" ]; then
     echo "Compiling [master]..."
     sass css/master.scss:css/master.css --no-source-map || echo "Failed"
@@ -64,5 +74,5 @@ elif [ "$1" = "dist" ]; then
         printf "$(tput setaf 2)Done.\n$(tput setaf 7)"
     fi
 else
-    echo "$(tput setaf 1)Options: $(tput setaf 2)all, master, demo, dist$(tput setaf 7)"
+    echo "$(tput setaf 1)Options: $(tput setaf 2)all, master, demo, site, dist$(tput setaf 7)"
 fi
