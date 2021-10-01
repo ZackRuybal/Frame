@@ -1,0 +1,35 @@
+// Masthead headers
+//      Masthead Containers: $masthead-<variable>
+//      Masthead Content: $mastContent-<variable>
+.masthead {
+    background: $masthead-Background;
+    display: block;
+    width: 100%;
+    height: $masthead-Height;
+    +.masthead {
+        margin-top: .5rem;
+    }
+    .content {
+        display: $mastcontent-Display;   
+        flex-direction: $mastContent-FlexDirection;
+        align-items: $mastContent-alignItems;
+        text-align: $mastContent-textAlign;
+        justify-content: $mastContent-justifyContent;
+        width: $mastContent-width;
+        margin: $mastContent-margin;
+        height: $masthead-Height;
+        color: $mastContent-color;
+    }
+    &.light {
+        background: $masthead-LightBG;
+        .content {
+            color: $mastContent-lightColor;
+        }
+    }
+    &.rounded {
+        border-radius: $masthead-RoundedRadius;
+    }
+    &.margined {
+        margin: $masthead-Margined;
+    }
+}

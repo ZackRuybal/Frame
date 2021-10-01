@@ -23,3 +23,21 @@ $navItemPadding: 8px;
 $navFontSize: .99rem;
 $navFontSize-Larger: 1.2rem;
 $navBrandingFontSize-Larger: 1.6rem;
+
+// Masthead
+$masthead-Background: #333;
+$masthead-Height: 60vh;
+$masthead-LightBG: rgb(209, 209, 209);
+$masthead-RoundedRadius: 10px;
+$masthead-Margined: .5rem;
+
+// Masthead Content
+$mastcontent-Display: flex;
+$mastContent-FlexDirection: column;
+$mastContent-alignItems: center;
+$mastContent-textAlign: center;
+$mastContent-justifyContent: center;
+$mastContent-width: 100%;
+$mastContent-margin: 0;
+$mastContent-color: #fff;
+$mastContent-lightColor: #333;
