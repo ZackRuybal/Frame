@@ -120,3 +120,28 @@
         }
     }
 }
+
+// Navigation header block
+.navHeader {
+    background: $navHeader-background;
+    display: $navHeader-display;
+    width: $navHeader-width;
+    height: $navHeader-height;
+    .content {
+        display: flex;
+        flex-direction: $navHeaderContent-flexDirection;
+        align-items: $navHeaderContent-alignItems;
+        text-align: $navHeaderContent-textAlign;
+        justify-content: $navHeaderContent-justifyContent;
+        width: $navHeaderContent-width;
+        margin: $navHeaderContent-margin;
+        height: $navHeaderContent-height;
+        color: $navHeaderContent-color;
+    }
+    &.dark {
+        background: $navHeaderDark-background;
+        .content {
+            color: $navHeaderContentDark-color;
+        }
+    }
+}

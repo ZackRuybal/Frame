@@ -24,6 +24,24 @@ $navFontSize: .99rem;
 $navFontSize-Larger: 1.2rem;
 $navBrandingFontSize-Larger: 1.6rem;
 
+// Navigation Header
+$navHeader-background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgba(199,86,0,1) 42%, rgba(89,0,255,1) 100%);
+$navHeaderDark-background: linear-gradient(40deg, white 0%, #ff9e00 42%, #00ff37 100%);
+    // Eventually this will be a fallback value, and the actual image or gradient background will be controlled by Javascript.
+$navHeader-display: block;
+$navHeader-width: 100%;
+$navHeader-height: 100vh;
+$navHeaderContent-flexDirection: column;
+$navHeaderContent-alignItems: center;
+$navHeaderContent-textAlign: center;
+$navHeaderContent-justifyContent: center;
+$navHeaderContent-width: 100%;
+$navHeaderContent-margin: -60px 0 0 0;
+$navHeaderContent-height: calc(100% - 60px);
+    // The height of the navigation gets subtracted here
+$navHeaderContent-color: #fff;
+$navHeaderContentDark-color: $black;
+
 // Masthead
 $masthead-Background: #333;
 $masthead-Height: 60vh;
