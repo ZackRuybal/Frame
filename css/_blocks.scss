@@ -33,3 +33,22 @@
         margin: $masthead-Margined;
     }
 }
+
+// Article blocks
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+article {
+    display: $article-display;
+    margin: 1rem .5rem;
+    h1, h2 {
+        font-family: $article-headerFont;
+    }
+    p {
+        font-family: $article-pFont;
+        font-size: $article-pFontSize;
+        margin: $article-pMargin;
+        line-height: $article-pLineHeight;
+    }
+    p+p {
+        margin-top: $article-pMultiMargin;
+    }
+}
