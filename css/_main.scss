@@ -160,6 +160,23 @@ figure {
 .textLeft { text-align:  left; }
 .textRight { text-align: right; }
 
+// Image Specific Utilities
+img.round {
+    border-radius: 50%;
+}
+img.rounded {
+    border-radius: 1rem;
+}
+img.block {
+    display: block;
+}
+img.spaced {
+    margin: .5rem;
+    +.spaced {
+        margin-left: 0;
+    }
+}
+
 // Lists
 ul {
     list-style: disc;
